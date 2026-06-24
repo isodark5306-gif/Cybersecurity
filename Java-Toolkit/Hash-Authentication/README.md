@@ -19,10 +19,6 @@ A project that demonstrates how  systems can verify users using password hashes 
 
 
 
----
-
-
-
 
 
 ## Inference
@@ -33,5 +29,21 @@ Hashing  provides stronger protection against credential theft and brute-force a
 
 ## Limitations
 This project demonstrates the principles of password hashing and authentication but does not implement  cryptographic algorithms, salting, secure databases, or advanced authentication methods.
+
+---
+
+## Concepts Demonstrated
+
+- Hash-Based Authentication
+- Password Security
+- Credential Protection
+- Secure Password Storage Concepts
+- Authentication Mechanisms
+- Access Control
+- Input Validation
+- Identity Verification
+
+
+
 
 ---
