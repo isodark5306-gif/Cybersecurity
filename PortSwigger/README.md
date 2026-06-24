@@ -1,4 +1,5 @@
-# Reflected XSS into HTML Context (No Encoding)
+# Labs
+# 1)Reflected XSS into HTML Context (No Encoding)
 
 ## Objective
 Exploit a reflected XSS vulnerability where user input is directly rendered in HTML without sanitization.
