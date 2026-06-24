@@ -36,9 +36,7 @@ Demonstrates the concept of hash-based authentication and secure credential veri
 
 ---
 
-## Inference
-- The role of hashing in securing c informations
----
+
 
 ## Inference
 Hashing  provides stronger protection against credential theft and brute-force attacks.
@@ -46,6 +44,6 @@ Hashing  provides stronger protection against credential theft and brute-force a
 ---
 
 ## Limitations
-This project demonstrates the principles of password hashing and authentication but does not implement  cryptographic algorithms, salting, secure databases, or advanced authentication mechanisms.
+This project demonstrates the principles of password hashing and authentication but does not implement  cryptographic algorithms, salting, secure databases, or advanced authentication methods.
 
 ---
