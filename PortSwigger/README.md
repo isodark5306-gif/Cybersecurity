@@ -19,7 +19,7 @@ This document contains writeups of 4 XSS vulnerabilities solved using PortSwigge
 * Observe execution in browser
 ---
 **Result:**
-* Alert executed in browser
+Alert executed in browser
 ## Lab 2: Stored XSS (HTML Context - No Encoding)
 
 **Type:** Stored XSS
@@ -27,6 +27,13 @@ This document contains writeups of 4 XSS vulnerabilities solved using PortSwigge
 
 <script>alert(1)</script>
 
+**Steps:**
+
+* Submit payload in input/comment field
+* Refresh page
+* Payload executes automatically
+
+**Result:** Persistent execution on page load
 ## Lab3:  DOM XSS (document.write, location.search)
 
 **Type:** DOM XSS
