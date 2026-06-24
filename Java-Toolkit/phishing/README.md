@@ -34,7 +34,7 @@ It simulates how basic security systems identify social engineering attacks.
 
 ---
 
-## Concepts Used
+## Concepts Demonstrated
 - Social engineering detection
 - Heuristic-based intrusion detection
 
