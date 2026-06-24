@@ -1,11 +1,10 @@
 # Hash-Based Authentication Simulator
 
-A Java-based cybersecurity project that demonstrates how authentication systems can verify users using password hashes instead of storing or comparing plain-text passwords.
 
 ---
 
 ## Objective
-A cybersecurity project that demonstrates how  systems can verify users using password hashes instead of storing or comparing plain-text passwords.
+A project that demonstrates how  systems can verify users using password hashes instead of storing or comparing plain-text passwords.
 
 ---
 
