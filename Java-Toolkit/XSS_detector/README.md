@@ -16,6 +16,7 @@ onerror
 onclick
 
 If any suspicious pattern is detected, the input is flagged as a potential XSS attempt.
+---
 
 ## Inference
 
