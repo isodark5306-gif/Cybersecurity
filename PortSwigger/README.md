@@ -43,3 +43,12 @@ Alert executed in browser
 **Payload:**
 
 "><script>alert(1)</script>
+**Steps:**
+
+* Inject payload via URL parameter
+* Load page
+* Observe execution
+
+**Result:** Script executed in browser
+
+---
