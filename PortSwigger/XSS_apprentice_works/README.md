@@ -58,7 +58,8 @@ Alert executed in browser
 **Type:** DOM XSS
 **Payload:**
 
-<img src=x onerror=alert(1)>
+ under angularbrackets: img src=x onerror=alert(1)
+
 
 **Steps:**
 
