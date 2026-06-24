@@ -17,7 +17,7 @@ This document contains writeups of 4 XSS vulnerabilities solved using PortSwigge
 * Inject payload into input field
 * Submit request
 * Observe execution in browser
---
+---
 **Result:**
 * Alert executed in browser
 ## Lab 2: Stored XSS (HTML Context - No Encoding)
