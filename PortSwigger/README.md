@@ -1,25 +1,33 @@
 # PortSwigger XSS Labs – Combined Report
 
 ## Objective
-This repository documents multiple Cross-Site Scripting (XSS) vulnerabilities solved using PortSwigger Web Security Academy.  
-The goal is to demonstrate understanding of different XSS types: reflected, stored, and DOM-based.
+This document contains writeups of 4 XSS vulnerabilities solved using PortSwigger Web Security Academy. It demonstrates understanding of Reflected, Stored, and DOM-based XSS.
 
 ---
 
-# Labs Completed
+## Lab 1: Reflected XSS (HTML Context - No Encoding)
 
----
+**Type:** Reflected XSS  
+**Payload:**
 
-## 1. Reflected XSS into HTML Context (No Encoding)
+<script>alert(1)</script>
+**Steps:**
 
-### Vulnerability Type
-- Reflected XSS
-- HTML injection
+* Inject payload into input field
+* Submit request
+* Observe execution in browser
+**Result:** Persistent execution on page load
 
-### Payload Used
+## Lab 2: Stored XSS (HTML Context - No Encoding)
+
+**Type:** Stored XSS
+**Payload:**
 
 <script>alert(1)</script>
 
----
+## Lab3:  DOM XSS (document.write, location.search)
 
-### 2.
+**Type:** DOM XSS
+**Payload:**
+
+"><script>alert(1)</script>
