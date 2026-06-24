@@ -18,7 +18,16 @@ This project demonstrates how attackers can inject malicious scripts into web ap
 
 * Detects only predefined XSS patterns.
 * Cannot detect context-specific XSS vulnerabilities.
-* Does not perform browser or DOM analysis.
+*  Does not perform browser or DOM analysis.
+---
+## Concepts Demonstrated
+Cross-Site Scripting (XSS)
+Input Validation
+Input Filtering
+Web Application Security
+Secure Coding Practices
+  
+
 
 
 
