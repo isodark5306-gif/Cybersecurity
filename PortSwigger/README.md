@@ -17,7 +17,7 @@ The goal is to demonstrate understanding of different XSS types: reflected, stor
 - HTML injection
 
 ### Payload Used
-```html
+
 <script>alert(1)</script>
 
 ---
