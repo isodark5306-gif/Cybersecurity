@@ -34,7 +34,6 @@ This project demonstrates how phishing websites often use deceptive URL structur
 * Phishing Detection
 * URL Analysis
 * Threat Identification
-* Social Engineering Awareness
 * Defensive Security
 
 
