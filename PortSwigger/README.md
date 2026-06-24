@@ -52,3 +52,20 @@ Alert executed in browser
 **Result:** Script executed in browser
 
 ---
+
+## Lab 4: DOM XSS (innerHTML, location.search)
+
+**Type:** DOM XSS
+**Payload:**
+
+<img src=x onerror=alert(1)>
+
+**Steps:**
+
+* Inject payload via URL
+* Reload page
+* Observe execution
+
+**Result:** onerror event triggers alert
+
+---
