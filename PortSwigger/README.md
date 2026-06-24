@@ -69,3 +69,7 @@ Alert executed in browser
 **Result:** onerror event triggers alert
 
 ---
+## Key Learnings
+* Reflected vs Stored vs DOM XSS
+* Unsafe sinks: innerHTML, document.write
+* Browser executes untrusted input when not sanitized
