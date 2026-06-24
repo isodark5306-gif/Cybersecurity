@@ -23,9 +23,3 @@ This project demonstrates how attackers can inject malicious scripts into web ap
 
 
 
-## Technologies Used
-
-* Java
-* String Processing
-* Pattern Matching
-* User Input Analysis
