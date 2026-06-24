@@ -1,72 +1,72 @@
 # SQLi Vulnerability Exploitation Labs
 
 ---
-# 1) SQL Injection – WHERE Clause (Retrieve Hidden Data)
+## 1) SQL Injection – WHERE Clause (Retrieve Hidden Data)
 
-## Objective
+**Objective**
 Exploit a SQL injection vulnerability in a product filter/search feature to retrieve hidden database records.
 
-## Vulnerability Type
+**Vulnerability Type**
 - SQL Injection
 - WHERE clause manipulation
 
-## Description
+**Description**
 The application directly includes user input in a database query without proper sanitization or parameterization.
 
-## Exploitation Method
+**Exploitation Method**
 - Injected payload into search/filter input
 - Modified query logic to bypass intended filtering
 
-## Result
+**Result**
 - Hidden products/data became visible
 - Database response changed based on manipulated input
 
-## Impact
+**Impact**
 - Unauthorized data disclosure
 - Broken data access control
 - Exposure of sensitive backend data
 
-## Root Cause
+**Root Cause**
 - Unsafe string concatenation in SQL query
 - No parameterized queries used
 
-## Mitigation
+**Mitigation**
 - Use prepared statements (parameterized queries)
 - Validate and sanitize input
 - Enforce least privilege database access
 
 ---
 
-# 2)SQL Injection – Authentication Bypass (Login Form)
+## 2)SQL Injection – Authentication Bypass (Login Form)
 
-## Objective
+**Objective**
 Exploit SQL injection in a login form to bypass authentication without valid credentials.
 
-## Vulnerability Type
+**Vulnerability Type**
 - SQL Injection
 - Authentication bypass
 
-## Description
+**Description**
 The login query directly concatenates user input into SQL authentication logic.
 
-## Exploitation Method
+**Exploitation Method**
 - Entered crafted input in username/password field
 - Altered query logic to always evaluate authentication condition as true
 
-## Result
+**Result**
 - Successfully logged in without valid credentials
 - Authentication mechanism bypassed
 
-## Impact
+**Impact**
 - Account takeover risk
 - Unauthorized system access
 - Full compromise of authentication system
 
-## Root Cause
+**Root Cause**
 - Improper input handling in authentication query
 - Lack of parameterized queries
 
-## Mitigation
+**Mitigation**
 - Use prepared statements for authentication queries
 - Implement secure password verification mechanisms
 - Apply rate limiting and monitoring
