@@ -73,3 +73,10 @@ Alert executed in browser
 * Reflected vs Stored vs DOM XSS
 * Unsafe sinks: innerHTML, document.write
 * Browser executes untrusted input when not sanitized
+
+  ---
+## Mitigation
+* Output encoding
+* Avoid unsafe DOM sinks
+* Use textContent instead of HTML injection
+---
