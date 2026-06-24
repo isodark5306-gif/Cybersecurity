@@ -1,3 +1,5 @@
+# SQLi Vulnerability Exploitation Labs
+
 ---
 # 1) SQL Injection – WHERE Clause (Retrieve Hidden Data)
 
