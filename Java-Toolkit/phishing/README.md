@@ -1,4 +1,4 @@
-#  Phishing Message Detector (Java)
+#  Phishing Message Detector 
 
 A simple rule-based cybersecurity tool that detects phishing patterns in text messages using keyword-based analysis.  
 It simulates how basic security systems identify social engineering attacks.
