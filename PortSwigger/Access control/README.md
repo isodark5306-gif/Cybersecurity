@@ -38,7 +38,7 @@ Administrative functionality is exposed without proper access restrictions.
 
 ---
 
-# 🧪 Lab 2: User ID Controlled by Request Parameter (IDOR)
+# Lab 2: User ID Controlled by Request Parameter (IDOR)
 
 **Vulnerability Type**
 - Broken access control
@@ -71,7 +71,7 @@ User data is accessed using predictable identifiers (e.g., user ID) without veri
 
 ---
 
-# 🧪 Lab 3: User Role / Privilege Escalation (Horizontal to Vertical)
+#  Lab 3: User Role / Privilege Escalation (Horizontal to Vertical)
 
 **Vulnerability Type**
 - Broken access control
