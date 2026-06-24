@@ -21,12 +21,14 @@ This project demonstrates how attackers can inject malicious scripts into web ap
 *  Does not perform browser or DOM analysis.
 ---
 ## Concepts Demonstrated
-*Cross-Site Scripting (XSS)
-*Input Validation
-*Input Filtering
-*Web Application Security
-*Secure Coding Practices
-  
+
+* Cross-Site Scripting (XSS)
+* Input Validation
+* Input Filtering
+* Web Application Security
+
+
+  ---
 
 
 
