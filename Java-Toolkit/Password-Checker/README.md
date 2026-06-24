@@ -14,3 +14,12 @@ The program checks whether a password satisfies these conditions:
 - Strong passwords make brute-force attacks more difficult.
 ## Limitations
 Can evaluate passwords against basic security criterion, but might fail against advanced password-cracking techniques.
+## Concepts Demonstrated
+
+- Password Security
+- Authentication Security
+- Password Policy Enforcement
+- Input Validation
+- Brute-Force Resistance
+- Secure Credential Management
+- Access Control Fundamentals
