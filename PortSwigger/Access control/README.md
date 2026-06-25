@@ -1,126 +1,101 @@
-# PortSwigger Access Control Vulnerabilities – Combined Report
+# Access Control Security Assessment – PortSwigger Web Security Academy
 
-**Objective**
-This document contains writeups of 3 Access Control (Authorization) labs from PortSwigger Web Security Academy. The focus is on identifying flaws in permission checks that allow unauthorized access to resources or actions.
+## Overview
 
----
-
-**Lab 1:** Unprotected Admin Functionality
-
-**Vulnerability Type**
-- Broken access control
-- Missing authorization checks
-
-**Description**
-Administrative functionality is exposed without proper access restrictions.
-
-**Exploitation Method**
-- Identified admin-only endpoints or functionality
-- Accessed them directly without authentication or role verification
-
-**Result**
-- Access to restricted administrative features
-- Sensitive actions available to unauthorized users
-
-**Impact**
-- Full or partial administrative control
-- System configuration compromise
-- Sensitive operations exposed
-
-**Root Cause**
-- No server-side verification for admin privileges
-- Hidden endpoints assumed to be secure (security through obscurity)
-
-**Mitigation**
-- Enforce server-side authorization checks
-- Restrict admin routes using role-based access control (RBAC)
-- Never rely on hidden URLs for security
+This report summarizes three Access Control labs completed on PortSwigger Web Security Academy. The objective was to identify and exploit authorization weaknesses that allowed unauthorized access to restricted functionality, sensitive data, or privileged actions.
 
 ---
 
-# Lab 2: User ID Controlled by Request Parameter (IDOR)
+## Lab 1: Unprotected Admin Functionality
 
-**Vulnerability Type**
-- Broken access control
-- Insecure Direct Object Reference (IDOR)
+### Vulnerability
 
-**Description**
-User data is accessed using predictable identifiers (e.g., user ID) without verifying ownership.
+Broken Access Control
 
-**Exploitation Method**
-- Modified user ID parameter in request
-- Accessed data belonging to another user
+### Finding
 
-**Result**
-- Unauthorized access to other users’ information
-- Data leakage across accounts
+Administrative functionality was exposed without proper authorization checks, allowing direct access to privileged features.
 
-**Impact**
-- Privacy violation
-- Sensitive data exposure
-- Potential account manipulation
+### Impact
 
-**Root Cause**
-- Missing ownership validation
-- Direct use of user-supplied object identifiers
+* Unauthorized access to administrative functions
+* Exposure of sensitive application controls
+* Potential system-wide compromise
 
-**Mitigation**
-- Enforce object-level access control checks
-- Verify user ownership before returning data
-- Use indirect references instead of predictable IDs
+### Key Takeaway
+
+Sensitive functionality must be protected through server-side authorization checks. Hidden URLs should never be considered a security mechanism.
 
 ---
 
-#  Lab 3: User Role / Privilege Escalation (Horizontal to Vertical)
+## Lab 2: Insecure Direct Object Reference (IDOR)
 
-**Vulnerability Type**
-- Broken access control
-- Privilege escalation
+### Vulnerability
 
-**Description**
-Application allows users to access higher-privilege actions by manipulating role or request parameters.
+Broken Access Control (IDOR)
 
-**Exploitation Method**
-- Modified request parameters related to user role or permissions
-- Accessed functionality intended for higher-privileged users
+### Finding
 
-**Result**
-- Unauthorized access to restricted functionality
-- Privilege escalation from normal user to elevated user/admin actions
+User-controlled identifiers could be manipulated to access resources belonging to other users.
 
-**Impact**
-- Full compromise of application integrity
-- Unauthorized administrative actions
-- Data manipulation or deletion
+### Impact
 
-**Root Cause**
-- Insufficient role validation on server side
-- Trusting client-side role indicators
+* Unauthorized disclosure of user data
+* Privacy violations
+* Potential account compromise
 
-**Mitigation**
-- Enforce strict role-based access control (RBAC)
-- Validate permissions on every request server-side
-- Never trust client-provided role values
+### Key Takeaway
+
+Applications must validate resource ownership on every request and enforce object-level authorization controls.
 
 ---
 
-**Key Learnings**
+## Lab 3: Privilege Escalation
 
-- Access control failures occur when authorization checks are missing or weak
-- IDOR is one of the most common real-world vulnerabilities
-- Privilege escalation often results from trusting client-side data
-- Hidden endpoints do not provide security
+### Vulnerability
+
+Broken Access Control
+
+### Finding
+
+Improper permission validation allowed access to functionality intended for higher-privileged users.
+
+### Impact
+
+* Unauthorized execution of privileged actions
+* Administrative functionality exposure
+* Risk to application integrity
+
+### Key Takeaway
+
+Permissions should be enforced server-side and never rely on client-controlled values such as roles or access flags.
 
 ---
 
-**Security Improvements**
+## Skills Demonstrated
 
-- Implement server-side authorization for every request
-- Avoid relying on client-side role parameters
+* Access Control Testing
+* Authorization Analysis
+* IDOR Identification
+* Privilege Escalation Testing
+* HTTP Request Analysis
+* Burp Suite Usage
+* Security Impact Evaluation
 
----
-## I have attached screenshots of the lab works, in a workflow manner by numbering them and writing the lab name for identification purposes
+## Tools
 
+* Burp Suite Community Edition
+* PortSwigger Web Security Academy
 
----
+## Security Principles Reinforced
 
+* Least Privilege
+* Server-Side Authorization
+* Object-Level Access Control
+* Defense in Depth
+
+## Conclusion
+
+These exercises demonstrated how insufficient authorization controls can expose sensitive data and privileged functionality. Through practical exploitation and analysis, I developed hands-on experience identifying Broken Access Control vulnerabilities, one of the most critical categories in modern web application security.
+
+**Evidence:** Numbered screenshots documenting the testing workflow, exploitation process, and successful lab completion are included.
