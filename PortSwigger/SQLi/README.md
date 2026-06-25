@@ -57,7 +57,7 @@ Authentication logic must use parameterized queries and secure credential valida
 * HTTP Request Manipulation
 * Vulnerability Validation
 * Security Impact Assessment
-* Burp Suite Usage
+
 
 
 
