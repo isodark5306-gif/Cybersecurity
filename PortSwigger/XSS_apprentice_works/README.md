@@ -101,12 +101,7 @@ Developers should avoid unsafe DOM manipulation methods and prefer safer alterna
 * DOM-Based XSS Analysis
 * HTTP Request Manipulation
 * Client-Side Security Assessment
-* Burp Suite Usage
 
-## Tools
-
-* Burp Suite Community Edition
-* PortSwigger Web Security Academy
 
 ## Security Principles Reinforced
 
