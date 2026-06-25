@@ -79,7 +79,6 @@ Permissions should be enforced server-side and never rely on client-controlled v
 * IDOR Identification
 * Privilege Escalation Testing
 * HTTP Request Analysis
-* Burp Suite Usage
 * Security Impact Evaluation
 
 
