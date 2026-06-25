@@ -59,10 +59,7 @@ Authentication logic must use parameterized queries and secure credential valida
 * Security Impact Assessment
 * Burp Suite Usage
 
-## Tools
 
-* Burp Suite Community Edition
-* PortSwigger Web Security Academy
 
 ## Security Principles Reinforced
 
