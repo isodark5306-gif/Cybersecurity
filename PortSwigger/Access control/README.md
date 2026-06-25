@@ -82,10 +82,6 @@ Permissions should be enforced server-side and never rely on client-controlled v
 * Burp Suite Usage
 * Security Impact Evaluation
 
-## Tools
-
-* Burp Suite Community Edition
-* PortSwigger Web Security Academy
 
 ## Security Principles Reinforced
 
